@@ -215,7 +215,7 @@
 
   <li class="md-nav__item">
     <a href="../../codes/" class="md-nav__link">
-      Last.fm Error Codes
+      Error Codes
     </a>
   </li>
 
@@ -230,11 +230,49 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
+      Album
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Album" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Album
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../album/getInfo/" class="md-nav__link">
+      getInfo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
       Auth
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Auth" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Auth
       </label>
@@ -286,19 +324,57 @@
       
       
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Library
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Library" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Library
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../library/getArtists/" class="md-nav__link">
+      getArtists
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-7">
       User
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="User" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         User
       </label>
@@ -337,6 +413,18 @@
   <li class="md-nav__item">
     <a href="../getLovedTracks/" class="md-nav__link">
       getLovedTracks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getPersonalTags/" class="md-nav__link">
+      getPersonalTags
     </a>
   </li>
 
@@ -466,6 +554,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getWeeklyChartList/" class="md-nav__link">
+      getWeeklyChartList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getWeeklyTrackChart/" class="md-nav__link">
+      getWeeklyTrackChart
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -525,7 +637,7 @@
                 
                   <h1>getTopTags</h1>
                 
-                <p>Get the top artists listened to by a user. You can stipulate a time period. Sends the overall chart by default.</p>
+                <p>Get the top tags used by this user.</p>
 <p>No authentication required.</p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <table>
@@ -544,7 +656,7 @@
 <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td>
 <td><code>none</code></td>
 <td><img alt="❎" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/274e.png" title=":negative_squared_cross_mark:" /></td>
-<td>The last.fm username to fetch top tags for.</td>
+<td>The Last.fm username to fetch top tags for.</td>
 </tr>
 <tr>
 <td><code>limit</code></td>
@@ -575,6 +687,10 @@
 <li>26 : Suspended API key - Access for your account has been suspended, please contact Last.fm  </li>
 <li>29 : Rate limit exceeded - Your IP has made too many requests in a short period  </li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This API call returns 200 OK HTTP status codes even when the response contains an error.</p>
+</div>
 <details class="note"><summary>Example response</summary><table>
 <thead>
 <tr>
