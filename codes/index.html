@@ -312,8 +312,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lastfm-error-code-12-invalid-method-signature-in-request-header" class="md-nav__link">
-    Last.fm Error Code 12: Invalid Method Signature In Request Header
+  <a href="#lastfm-error-code-13-invalid-method-signature-in-request-header" class="md-nav__link">
+    Last.fm Error Code 13: Invalid Method Signature In Request Header
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-16-a-temporary-error-occurred" class="md-nav__link">
+    Last.fm Error Code 16: A Temporary Error Occurred
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-26-your-api-key-has-been-banned" class="md-nav__link">
+    Last.fm Error Code 26: Your API key has been banned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-29-rate-limit-exceeded" class="md-nav__link">
+    Last.fm Error Code 29: Rate Limit Exceeded
   </a>
   
 </li>
@@ -631,8 +652,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lastfm-error-code-12-invalid-method-signature-in-request-header" class="md-nav__link">
-    Last.fm Error Code 12: Invalid Method Signature In Request Header
+  <a href="#lastfm-error-code-13-invalid-method-signature-in-request-header" class="md-nav__link">
+    Last.fm Error Code 13: Invalid Method Signature In Request Header
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-16-a-temporary-error-occurred" class="md-nav__link">
+    Last.fm Error Code 16: A Temporary Error Occurred
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-26-your-api-key-has-been-banned" class="md-nav__link">
+    Last.fm Error Code 26: Your API key has been banned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-29-rate-limit-exceeded" class="md-nav__link">
+    Last.fm Error Code 29: Rate Limit Exceeded
   </a>
   
 </li>
@@ -700,8 +742,14 @@ This error emits when a method requests data from a resource that does not exist
 <p>This error reflects that your request was signed with an api key that is not valid. A valid API key can be generated <a href="https://www.last.fm/api/account/create">here</a>.</p>
 <h3 id="lastfm-error-code-11-service-offline">Last.fm Error Code 11: Service Offline<a class="headerlink" href="#lastfm-error-code-11-service-offline" title="Permanent link">&para;</a></h3>
 <p>Last.fm is often down and you might encounter this error when a certain part of their backend is offline. Updated for the status of Last.fm's service can be found <a href="https://twitter.com/lastfmstatus">on this Twitter account</a>.</p>
-<h3 id="lastfm-error-code-12-invalid-method-signature-in-request-header">Last.fm Error Code 12: Invalid Method Signature In Request Header<a class="headerlink" href="#lastfm-error-code-12-invalid-method-signature-in-request-header" title="Permanent link">&para;</a></h3>
+<h3 id="lastfm-error-code-13-invalid-method-signature-in-request-header">Last.fm Error Code 13: Invalid Method Signature In Request Header<a class="headerlink" href="#lastfm-error-code-13-invalid-method-signature-in-request-header" title="Permanent link">&para;</a></h3>
 <p>This error signifies a malformed header, more specifically, one that hasn't been signed right.</p>
+<h3 id="lastfm-error-code-16-a-temporary-error-occurred">Last.fm Error Code 16: A Temporary Error Occurred<a class="headerlink" href="#lastfm-error-code-16-a-temporary-error-occurred" title="Permanent link">&para;</a></h3>
+<p>This is another generic error similar to Last.fm error code 8, however this code implies that this request can be made again and will most likely be successful, this error usually occurs due to backed errors.</p>
+<h3 id="lastfm-error-code-26-your-api-key-has-been-banned">Last.fm Error Code 26: Your API key has been banned<a class="headerlink" href="#lastfm-error-code-26-your-api-key-has-been-banned" title="Permanent link">&para;</a></h3>
+<p>If you hit this error, your API key has been revoked. This can occur due to a plethora of reasons, most likely a violation of Last.fm's ratelimits multiple times, or a violation of their terms of service in general. To further clarify on why you were banned, contact Last.fm support.</p>
+<h3 id="lastfm-error-code-29-rate-limit-exceeded">Last.fm Error Code 29: Rate Limit Exceeded<a class="headerlink" href="#lastfm-error-code-29-rate-limit-exceeded" title="Permanent link">&para;</a></h3>
+<p>Your IP has made too many requests in a short period. To prevent API abuse, Last.fm returns a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429">HTTP 429 Error</a> and blocks your requests. Implementing throttling might be a fair consideration.</p>
                 
               
               
