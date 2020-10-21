@@ -15,7 +15,7 @@
     
     
       
-        <title>getLovedTracks - Unofficial last.fm API docs</title>
+        <title>getToken - Unofficial last.fm API docs</title>
       
     
     
@@ -59,11 +59,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#parameters" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +85,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              getLovedTracks
+              getToken
             
           </span>
         </div>
@@ -212,10 +207,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Auth
@@ -235,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../auth/Desktop/" class="md-nav__link">
+    <a href="../Desktop/" class="md-nav__link">
       Desktop
     </a>
   </li>
@@ -245,11 +242,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../auth/getToken/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       getToken
     </a>
+    
   </li>
 
         
@@ -259,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../auth/signature/" class="md-nav__link">
+    <a href="../signature/" class="md-nav__link">
       Signature
     </a>
   </li>
@@ -274,12 +278,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       User
@@ -299,7 +301,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getFriends/" class="md-nav__link">
+    <a href="../../user/getFriends/" class="md-nav__link">
       getFriends
     </a>
   </li>
@@ -311,7 +313,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getInfo/" class="md-nav__link">
+    <a href="../../user/getInfo/" class="md-nav__link">
       getInfo
     </a>
   </li>
@@ -321,59 +323,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        getLovedTracks
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../user/getLovedTracks/" class="md-nav__link">
       getLovedTracks
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#responses" class="md-nav__link">
-    Responses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -383,7 +337,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getRecentTracks/" class="md-nav__link">
+    <a href="../../user/getRecentTracks/" class="md-nav__link">
       getRecentTracks
     </a>
   </li>
@@ -395,7 +349,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getTopAlbums/" class="md-nav__link">
+    <a href="../../user/getTopAlbums/" class="md-nav__link">
       getTopAlbums
     </a>
   </li>
@@ -407,7 +361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getTopArtists/" class="md-nav__link">
+    <a href="../../user/getTopArtists/" class="md-nav__link">
       getTopArtists
     </a>
   </li>
@@ -419,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getTopTags/" class="md-nav__link">
+    <a href="../../user/getTopTags/" class="md-nav__link">
       getTopTags
     </a>
   </li>
@@ -431,7 +385,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getTopTracks/" class="md-nav__link">
+    <a href="../../user/getTopTracks/" class="md-nav__link">
       getTopTracks
     </a>
   </li>
@@ -443,7 +397,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getWeeklyAlbumChart/" class="md-nav__link">
+    <a href="../../user/getWeeklyAlbumChart/" class="md-nav__link">
       getWeeklyAlbumChart
     </a>
   </li>
@@ -455,7 +409,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getWeeklyArtistChart/" class="md-nav__link">
+    <a href="../../user/getWeeklyArtistChart/" class="md-nav__link">
       getWeeklyArtistChart
     </a>
   </li>
@@ -473,204 +427,19 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#responses" class="md-nav__link">
-    Responses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/lastfm-docs/api-docs/edit/master/docs/user/getLovedTracks.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/lastfm-docs/api-docs/edit/master/docs/auth/getToken.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>getLovedTracks</h1>
+                  <h1>getToken</h1>
                 
-                <p>Returns a list of the tracks loved scrobbled by this user. Defaults to the last 50 loved tracks.</p>
-<p>This method doesn't not require authentication.</p>
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Type</th>
-<th>Default</th>
-<th>Optional</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>user</code></td>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td>
-<td><code>none</code></td>
-<td><img alt="❎" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/274e.png" title=":negative_squared_cross_mark:" /></td>
-<td>The last.fm username to fetch the loved tracks of</td>
-</tr>
-<tr>
-<td><code>limit</code></td>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></td>
-<td>50</td>
-<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /></td>
-<td>The number of results to fetch per page. Defaults to 50. Maximum is 1000.</td>
-</tr>
-<tr>
-<td><code>page</code></td>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></td>
-<td>1</td>
-<td><img alt="✅" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2705.png" title=":white_check_mark:" /></td>
-<td>The page number to fetch. Defaults to first page.</td>
-</tr>
-<tr>
-<td><code>api_key</code></td>
-<td><a href="https://www.last.fm/api/account/create">token</a></td>
-<td><code>none</code></td>
-<td><img alt="❎" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/274e.png" title=":negative_squared_cross_mark:" /></td>
-<td>A Last.fm API key.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="responses">Responses<a class="headerlink" href="#responses" title="Permanent link">&para;</a></h2>
-<p>Errors:</p>
-<ul>
-<li>6 : Invalid parameters - Your request is missing a required parameter</li>
-<li>8 : Operation failed - Something else went wrong</li>
-<li>9 : Invalid session key - Please re-authenticate</li>
-<li>10 : Invalid API key - You must be granted a valid key by last.fm</li>
-<li>11 : Service Offline - This service is temporarily offline. Try again later.</li>
-<li>13 : Invalid method signature supplied</li>
-<li>16 : There was a temporary error processing your request. Please try again</li>
-<li>17 : Login required - Requested profile might not have privacy set to public.</li>
-<li>26 : Suspended API key - Access for your account has been suspended, please contact Last.fm</li>
-<li>29 : Rate limit exceeded - Your IP has made too many requests in a short period</li>
-</ul>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<details class="note"><summary>Example Response</summary><table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>username</td>
-<td>TyphoonasNorABot</td>
-</tr>
-<tr>
-<td>limit</td>
-<td>1</td>
-</tr>
-<tr>
-<td>format</td>
-<td>json</td>
-</tr>
-</tbody>
-</table>
-<p>HTTP status: <code>200 OK</code></p>
-<div class="highlight"><pre><span></span><code>https://ws.audioscrobbler.com/2.0/?api_key=YOUR_API_KEY&amp;method=User.getlovedtracks&amp;user=TyphoonsNotABot&amp;limit=1&amp;format=json
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
-    <span class="nt">&quot;lovedtracks&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@attr&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;page&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;7790&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;TyphoonsNotABot&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;perPage&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;totalPages&quot;</span><span class="p">:</span> <span class="s2">&quot;7790&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;track&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;artist&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.last.fm/music/The+Backseat+Lovers&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;The Backseat Lovers&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;mbid&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
-          <span class="p">},</span>
-          <span class="nt">&quot;mbid&quot;</span><span class="p">:</span> <span class="s2">&quot;59da79dd-aed6-447c-951c-070f6b8446a1&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;uts&quot;</span><span class="p">:</span> <span class="s2">&quot;1603112664&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;#text&quot;</span><span class="p">:</span> <span class="s2">&quot;19 Oct 2020, 13:04&quot;</span>
-          <span class="p">},</span>
-          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.last.fm/music/The+Backseat+Lovers/_/Davy+Crochet&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;small&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;#text&quot;</span><span class="p">:</span> <span class="s2">&quot;https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;medium&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;#text&quot;</span><span class="p">:</span> <span class="s2">&quot;https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;large&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;#text&quot;</span><span class="p">:</span> <span class="s2">&quot;https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;extralarge&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;#text&quot;</span><span class="p">:</span> <span class="s2">&quot;https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png&quot;</span>
-            <span class="p">}</span>
-          <span class="p">],</span>
-          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Davy Crochet&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;streamable&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;fulltrack&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;#text&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
-      <span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-</code></pre></div>
-</details>
-<details class="warning"><summary>Example Response of a user that doesn't exist</summary><p>HTTP status: <code>404 NOT FOUND</code></p>
-<div class="highlight"><pre><span></span><code>https://ws.audioscrobbler.com/2.0/?api_key=YOUR_API_KEY&amp;method=User.getlovedtracks&amp;user=userthatdoesntexist&amp;format=json
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;error&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
-    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;User not found&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-</details>
+                
                 
               
               
@@ -689,7 +458,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../getInfo/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Desktop/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -698,19 +467,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                getInfo
+                Desktop
               </div>
             </div>
           </a>
         
         
-          <a href="../getRecentTracks/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../signature/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                getRecentTracks
+                Signature
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
