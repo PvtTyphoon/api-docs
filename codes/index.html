@@ -290,6 +290,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-9-invalid-session-token" class="md-nav__link">
+    Last.fm Error Code 9: Invalid Session Token
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -581,6 +588,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-9-invalid-session-token" class="md-nav__link">
+    Last.fm Error Code 9: Invalid Session Token
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -625,7 +639,7 @@ This page provides a comprehensive list of error codes returned by Last.fm, alon
 <h3 id="lastfm-error-code-3-invalid-method">Last.fm Error Code 3: Invalid Method<a class="headerlink" href="#lastfm-error-code-3-invalid-method" title="Permanent link">&para;</a></h3>
 <p>This error emits when a request is made to an endpoint with a method that does not exist. For example, <code>artist.getSomeData</code>. While the endpoint you're making a request to might be perfectly valid, a malformed method name will prevent Last.fm from returning the data you want. For a comprehensive list of every method, refer to the API docs on this site.</p>
 <h3 id="lastfm-error-code-4-authentication-failed">Last.fm Error Code 4: Authentication Failed<a class="headerlink" href="#lastfm-error-code-4-authentication-failed" title="Permanent link">&para;</a></h3>
-<p>This error emits when a request tries to authenticate with an invalid session key, or similar missing/malformed parameters. For a guide to auth and signing your calls, refer to <a href="https://lastfm-docs.github.io/api-docs/auth/signature/">this part</a> of the site. Make sure that your session key is hashed using UTF-8 encoding in addition to MD5</p>
+<p>This error emits when a request is made signed with a session token that has been generated for an account that has revoked access to your application.</p>
 <h3 id="lastfm-error-code-5-invalid-response-format">Last.fm Error Code 5: Invalid Response Format<a class="headerlink" href="#lastfm-error-code-5-invalid-response-format" title="Permanent link">&para;</a></h3>
 <p>A <code>format</code> parameter is necessary in addition to the documented parameters, this may either have a value of <code>XML</code> or <code>JSON</code> (case insensitive). Requesting data in another format will emit this error. Some methods do support more than these 2 formats, the methods that do have their formats listed in this documentation.</p>
 <h3 id="lastfm-error-code-6-parameter-error">Last.fm Error Code 6: Parameter Error<a class="headerlink" href="#lastfm-error-code-6-parameter-error" title="Permanent link">&para;</a></h3>
@@ -638,6 +652,8 @@ This page provides a comprehensive list of error codes returned by Last.fm, alon
 This error emits when a method requests data from a resource that does not exist, for example, an artist or album that cannot have the data you requested. This might be due to using a method that is not valid on an endpoint despite being documented.</p>
 <h3 id="lastfm-error-code-8-generic-error">Last.fm Error Code 8: Generic Error<a class="headerlink" href="#lastfm-error-code-8-generic-error" title="Permanent link">&para;</a></h3>
 <p>This error is emitted when something unexpected causes your request to fail but unfortunately Last.fm can't quite tell you what. This is a generic error. This is similar to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500">HTTP Error 500</a>.</p>
+<h3 id="lastfm-error-code-9-invalid-session-token">Last.fm Error Code 9: Invalid Session Token<a class="headerlink" href="#lastfm-error-code-9-invalid-session-token" title="Permanent link">&para;</a></h3>
+<p>This error emits when a request tries to authenticate with an invalid session key, or similar missing/malformed parameters. For a guide to auth and signing your calls, refer to <a href="https://lastfm-docs.github.io/api-docs/auth/signature/">this part</a> of the site. Make sure that your session key is hashed using UTF-8 encoding in addition to MD5</p>
                 
               
               
