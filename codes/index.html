@@ -269,6 +269,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-5-invalid-response-format" class="md-nav__link">
+    Last.fm Error Code 5: Invalid Response Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-6-parameter-error" class="md-nav__link">
+    Last.fm Error Code 6: Parameter Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-8-generic-error" class="md-nav__link">
+    Last.fm Error Code 8: Generic Error
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -539,6 +560,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-5-invalid-response-format" class="md-nav__link">
+    Last.fm Error Code 5: Invalid Response Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-6-parameter-error" class="md-nav__link">
+    Last.fm Error Code 6: Parameter Error
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastfm-error-code-8-generic-error" class="md-nav__link">
+    Last.fm Error Code 8: Generic Error
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -577,12 +619,25 @@ This page provides a comprehensive list of error codes returned by Last.fm, alon
  !!! warning
     Some API calls return HTTP 200 OK status codes even when the response contains an error.
     For this reason make sure to check your response payload to validate it.</p>
+<hr />
 <h3 id="lastfm-error-code-2-service-unavailableservice-unavailable">Last.fm Error Code 2: Service Unavailable/Service Unavailable<a class="headerlink" href="#lastfm-error-code-2-service-unavailableservice-unavailable" title="Permanent link">&para;</a></h3>
 <p>This error usually emits when Last.fm is having server issues. However this may also happen because of a malformed request with invalid endpoints.</p>
 <h3 id="lastfm-error-code-3-invalid-method">Last.fm Error Code 3: Invalid Method<a class="headerlink" href="#lastfm-error-code-3-invalid-method" title="Permanent link">&para;</a></h3>
 <p>This error emits when a request is made to an endpoint with a method that does not exist. For example, <code>artist.getSomeData</code>. While the endpoint you're making a request to might be perfectly valid, a malformed method name will prevent Last.fm from returning the data you want. For a comprehensive list of every method, refer to the API docs on this site.</p>
 <h3 id="lastfm-error-code-4-authentication-failed">Last.fm Error Code 4: Authentication Failed<a class="headerlink" href="#lastfm-error-code-4-authentication-failed" title="Permanent link">&para;</a></h3>
 <p>This error emits when a request tries to authenticate with an invalid session key, or similar missing/malformed parameters. For a guide to auth and signing your calls, refer to <a href="https://lastfm-docs.github.io/api-docs/auth/signature/">this part</a> of the site. Make sure that your session key is hashed using UTF-8 encoding in addition to MD5</p>
+<h3 id="lastfm-error-code-5-invalid-response-format">Last.fm Error Code 5: Invalid Response Format<a class="headerlink" href="#lastfm-error-code-5-invalid-response-format" title="Permanent link">&para;</a></h3>
+<p>A <code>format</code> parameter is necessary in addition to the documented parameters, this may either have a value of <code>XML</code> or <code>JSON</code> (case insensitive). Requesting data in another format will emit this error. Some methods do support more than these 2 formats, the methods that do have their formats listed in this documentation.</p>
+<h3 id="lastfm-error-code-6-parameter-error">Last.fm Error Code 6: Parameter Error<a class="headerlink" href="#lastfm-error-code-6-parameter-error" title="Permanent link">&para;</a></h3>
+<p>The Last.fm API returns this error code in response to multiple types of failed request. This error can occur because:
+ - Your search returned no results
+ - Your request used an invalid parameter
+ - Your request has a parameter with an invalid value (for example, an invalid type)
+ - The requested resource is not available</p>
+<p>### Last.fm Error Code 7: Invalid Resource Specified 
+This error emits when a method requests data from a resource that does not exist, for example, an artist or album that cannot have the data you requested. This might be due to using a method that is not valid on an endpoint despite being documented.</p>
+<h3 id="lastfm-error-code-8-generic-error">Last.fm Error Code 8: Generic Error<a class="headerlink" href="#lastfm-error-code-8-generic-error" title="Permanent link">&para;</a></h3>
+<p>This error is emitted when something unexpected causes your request to fail but unfortunately Last.fm can't quite tell you what. This is a generic error. This is similar to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500">HTTP Error 500</a>.</p>
                 
               
               
